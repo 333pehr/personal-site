@@ -1,0 +1,93 @@
+.social {
+    text-align:center;
+    margin-top: 50px;
+  }
+  ul{
+    list-style: none;
+  }
+  
+ .social > a {
+    font-size:35px;
+    width:45px;
+    height:45px;
+    line-height:40px;
+    display:inline-block;
+    text-align:center;
+    border-radius:45%;
+    border:1px solid #ccc;
+    margin:0 15px;
+    color:inherit;
+    opacity:0.6;
+  }
+  
+ .social > a:hover {
+    opacity:1;
+    transition: 300ms;
+  }
+  @import url("https://fonts.googleapis.com/css?family=Lato:300");
+  .body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to right, #000000, #434343);
+  }
+  
+  .gradient-border {
+      text-align: center;
+    --border-width: 4px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: 300px;
+    font-family: 'Times New Roman';
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    color: white;
+    background: #222;
+    border-radius: var(--border-width);
+  }
+  .gradient-border::after {
+    position: absolute;
+    content: "";
+    top: calc(-1 * var(--border-width));
+    left: calc(-1 * var(--border-width));
+    z-index: -1;
+    width: calc(100% + var(--border-width) * 2);
+    height: calc(100% + var(--border-width) * 2);
+    background: linear-gradient(60deg, #5f86f2, #a65ff2, #f25fd0, #f25f61, #f2cb5f, #abf25f, #5ff281, #5ff2f0);
+    background-size: 300% 300%;
+    background-position: 0 50%;
+    border-radius: calc(2 * var(--border-width));
+    animation: moveGradient 4s alternate infinite;
+  }
+  
+  @keyframes moveGradient {
+    50% {
+      background-position: 100% 50%;
+    }
+}
+.person{
+  letter-spacing: 2px;
+  
+}
+.name:hover{
+  font-size: 43px;
+  transition: 500ms;
+}
+.job{
+    font-style: italic;
+    font-size: 25px;
+    letter-spacing: 2px;
+    margin-top: 0px;
+    line-height: 2px;
+}
+.job:hover{
+  font-size: 28px;
+  transition: 500ms;
+}
+.containter{
+    display: inline;
+}
